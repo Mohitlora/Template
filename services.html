@@ -683,7 +683,7 @@
                     planTier: document.getElementById('plan-tier').value || "Not selected",
                     notes: document.getElementById('notes').value.trim(),
                     timestamp: new Date().toISOString(),
-                    source: "https://siterevamper.com/services_page" // or window.location.href
+                    source: window.location.hostname // captures the domain where the form is filled from
                 };
 
                 // Send to Webhook
